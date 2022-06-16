@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponentModule } from '@navi';
 import { HomePageModule } from './pages/home.page-module';
 import { TravelPageModule } from './pages/travel.page-module';
+import { PhotoPageModule } from './pages/photo.page-module';
 
 const routes: Routes = [{ 
         path: 'home', 
@@ -11,6 +12,10 @@ const routes: Routes = [{
   { 
         path: 'travel', 
         loadChildren: () => TravelPageModule
+      },
+  { 
+        path: 'photo', 
+        loadChildren: () => PhotoPageModule
       }
 ];
 
