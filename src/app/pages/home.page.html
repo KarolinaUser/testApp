@@ -1,12 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" [routerLink]="['/']"routerLinkActive="router-link-active">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpJVlHyKEXTh_oicxMo6-17ryd1z5-jFY-A&usqp=CAU"
+          height="45"
+          alt="Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Travel Plan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/travel']"routerLinkActive="router-link-active">Inspiration and Photo</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      </div> 
+      </div>
+</nav>
+<!-- Navbar -->
 <div
      class="bg-image"
      style="
-            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
-            height: 500px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe9gKvUnqOEsdy2RuuCZrzIf9ulniLGlHWgw&usqp=CAU');
+            height: 300px;
             "
      >
-  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)"></div>
+  <div class="mask"></div>
 </div>
+
 <!-- Background image -->
 
 <div class="container">
@@ -18,7 +69,7 @@
           <p class="mb-4 text-muted">
             Uwaga! Przeczytanie niniejszych opisów może zakończyć się niekontrolowanym kupnem biletu w podróż marzeń
           </p>
-          <button type="button" class="btn btn-primary btn-rounded me-2">
+          <button type="button" class="btn btn-primary btn-rounded me-2" [routerLink]="['/travel']"routerLinkActive="router-link-active">
             Just GO!
           </button>
         </div>
@@ -32,11 +83,11 @@
               TUTAJ BĘDZIE MNÓWSTWO INSPIRACJI (JAK TYLKO ZNAJDĘ CHWILĘ CZASU)
             </p>
 
-            <p><strong> MIEJSCE NA WIĘCEJ INSPIRACJI...</strong></p>
+            <p>MIEJSCE NA WIĘCEJ INSPIRACJI...</p>
 
-            <p>
-              TEKST
-            </p>
+            <p><strong>
+              “Podstawą szczęścia jest wolność, a podstawą wolności jest odwaga.”
+            </strong></p>
 
             <img
                  src="https://scontent.fbhx1-1.fna.fbcdn.net/v/t1.6435-9/55619251_2302137259830364_5912967886850228224_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=aZNP03AOGB0AX9SLcK-&_nc_ht=scontent.fbhx1-1.fna&oh=00_AT9z-iDzenxKzM8ev9ClCWCcD-AC_NKWRlI5nCMhPa2FhQ&oe=62CF7AE6"
