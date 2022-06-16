@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { NavbarComponentModule } from '@navi';
 import { HomePage } from './home.page';
 
 @NgModule({ imports: [CommonModule, 
@@ -9,7 +10,9 @@ import { HomePage } from './home.page';
           path: '',
           component: HomePage,
         }
-      ])],
+      ]),
+
+],
   	declarations: [HomePage],
   	providers: [],
   	exports: [] })
