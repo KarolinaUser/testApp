@@ -18,7 +18,7 @@ export class TravelListComponent {
       new TravelListQuery(
         TravelPlaceDtos.map(
           (TravelPlaceDto) =>
-           new TravelListItemQuery(TravelPlaceDto.name, TravelPlaceDto.continent)
+           new TravelListItemQuery(TravelPlaceDto.name, TravelPlaceDto.continent, TravelPlaceDto.visit)
            ))));
 
   constructor(@Inject(GETS_ALL_TRAVEL_PLACE_DTO) private _getsAllTravelPlaceDto: GetsAllTravelPlaceDtoPort) {

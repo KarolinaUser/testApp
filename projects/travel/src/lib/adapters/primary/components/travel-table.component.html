@@ -1,12 +1,9 @@
-<table>
+<table *ngIf="TravelTableQuery$ |async as TravelTableQuery$">
     <tr>
-        <th>#</th>
-        <th>name</th>
-        <th>continent</th>
+        <th *ngFor=" let header of TravelTableQuery$.headers"> {{ header}}</th> 
     </tr>
-<tr *ngFor="let item of list$ | async">
-    <td>{{ item.id}}</td> 
-    <td>{{item.name}}</td>
-    <td>{{item.continent}}</td>
+    <tr *ngFor="let row of TravelTableQuery$.rows"> 
+    <td *ngFor=" let col of row.columns">{{ col }}</td>
     </tr>
 </table>
+ 
