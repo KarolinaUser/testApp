@@ -1,0 +1,5 @@
+<ul *ngIf="TravelListQuery$ |async as TravelListQuery$">
+    <li *ngFor=" let item of TravelListQuery$.items ">
+        {{ item.text}} 
+    </li>
+</ul>

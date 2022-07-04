@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "traveltest-ff3cc": {
+      "hosting": {
+        "testApp": [
+          "traveltest-ff3cc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "traveltest-ff3cc"
+  }
+}
